@@ -69,9 +69,11 @@ const Post: React.FC<{ post: Post }> = (props) => {
 
   return (
     <div className={styles.container}>
-      <Link href="/">
-        <a>Go back home</a>
-      </Link>
+      <p className={styles.goback}>
+        <Link href="/">
+          <a>Go back home</a>
+        </Link>
+      </p>
       <h1>{post.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
 
