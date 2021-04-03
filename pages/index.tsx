@@ -33,6 +33,9 @@ const Home: React.FC<{ posts: Post[] }> = (props) => {
   const { posts } = props;
   return (
     <div className={styles.container}>
+      <Head>
+        <title>Fiyi's Blog</title>
+      </Head>
       <h1>Hello, Welcome to Fiyi's Blog!</h1>
       <ul>
         {posts.map((post, index) => {
