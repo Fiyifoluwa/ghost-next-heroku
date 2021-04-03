@@ -35,6 +35,7 @@ const Home: React.FC<{ posts: Post[] }> = (props) => {
     <div className={styles.container}>
       <Head>
         <title>Fiyi's Blog</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <h1>Hello, Welcome to Fiyi's Blog!</h1>
       <ul>
